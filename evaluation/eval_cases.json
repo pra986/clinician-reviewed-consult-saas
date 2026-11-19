@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "eval_001_valid_grounded",
+    "source_note": "Patient presents with mild hypertension. Continue Lisinopril 10 mg daily and follow up in 4 weeks.",
+    "draft_text": "Assessment: Mild hypertension. Plan: Continue Lisinopril 10 mg daily; follow up in 4 weeks.",
+    "expected_ungrounded": []
+  },
+  {
+    "case_id": "eval_002_invented_dosage",
+    "source_note": "Patient reports seasonal allergies. Recommend Cetirizine 10 mg once daily.",
+    "draft_text": "Assessment: Seasonal allergies. Plan: Start Cetirizine 20 mg twice daily and Metformin 500 mg.",
+    "expected_ungrounded": ["20 mg", "Metformin 500 mg"]
+  },
+  {
+    "case_id": "eval_003_empty_note",
+    "source_note": "   ",
+    "expected_error": "Note cannot be empty"
+  }
+]
